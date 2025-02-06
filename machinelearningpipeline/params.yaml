@@ -1,0 +1,16 @@
+# Provide Hardcoded Parameters
+
+# take path of input file from raw folder -> preprocess it -> store it in prrocessed folder
+preprocess:
+  input: data/raw/data.csv
+  output: data/processed/data.csv
+
+# train model over the input file from raw folder -> after training -> store trained model in models folder -> with .pkl extension
+# set some parameters during training
+train:
+  data: data/raw/data.csv
+  model: models/model.pkl
+  random_state: 42
+  n_estimators: 100
+  max_depth: 5
+
